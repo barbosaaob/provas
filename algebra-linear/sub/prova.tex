@@ -1,0 +1,176 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage[brazil]{babel}
+
+\begin{document}
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	\'{A}lgebra Linear\\
+	Avalia\c{c}\~ao PS --- 12/05/2016 \\
+	Engenharia Mec\^anica \\
+	\vspace{0.2cm}
+	% Prof. Adriano Barbosa
+\end{center}
+Nome: \\
+Avalia\c{c}\~ao respondida: \\
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{center}
+VOC\^E DEVE RESPONDER APENAS AS QUEST\~OES REFERENTES A SUA MENOR NOTA OU APENAS AS QUEST\~OES MARCADAS COM (*)!\@
+\end{center}
+
+\noindent{}\rule{\textwidth}{0.4pt}
+
+{\bf Avalia\c{c}\~ao P1:}
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Defina e d\^e um exemplo de:
+	\begin{enumerate}
+		\item Matriz sim\'etrica
+		\item Matriz transposta
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determine $k$, para que o sistema admita \'unica solu\c{c}\~ao
+
+$\left\{\begin{array}{ccccc}
+	-4x & + & 3y & = & 2 \\
+	5x & - & 4y & = & 0 \\
+	2x & - & y & = & k
+\end{array}\right.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique se as retas $r_1$ e $r_2$ possuem interse\c{c}\~ao:
+
+$r_1:\left\{\begin{array}{l}
+	y = 2x - 3 \\
+	z = x
+\end{array}\right.$
+\ \ \ \ \ e\ \ \ \ \ 
+$r_2:\left\{\begin{array}{l}
+	x = -t \\
+	y = 4 - t \\
+	z = 2 + 2t
+\end{array}\right.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item (*) Encontre a equa\c{c}\~ao param\'etrica da reta que passa pelo ponto $A = (3, 2, 1)$ e \'e simultaneamente perpendicular as retas $r_1$ e $r_2$:
+
+$r_1:\left\{\begin{array}{l}
+	x = 3 \\
+	y = 1
+\end{array}\right.$
+\ \ \ \ \ e\ \ \ \ \ 
+$r_2:\left\{\begin{array}{l}
+	y = x - 3 \\
+	z = 2x + 3
+\end{array}\right.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item (*) Encontre a equa\c{c}\~ao geral do plano que passa pelos pontos $(1, 0, 0)$, $(0, 2, 0)$ e $(0, 0, 3)$.
+
+\end{enumerate}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+{\bf Avalia\c{c}\~ao P2:}
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item O conjunto
+	$W = \left\{
+		\left[\begin{array}{cc}
+			a & b \\
+			c & d
+		\end{array}\right] \mbox{ com }
+	a, b, c, d \in \mathbb{R} \mbox{ e } b = c\right\}$
+\'e um subespa\c{c}o das matrizes $2\times 2$?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Decida se os conjuntos de vetores s\~ao LI ou LD:
+	\begin{enumerate}
+		\item $\{(1, 2, 4), (5, -10, -20)\}$ em $\mathbb{R}^3$.
+		\item $\{-x^2+6x, x^2+x+1\}$ em $\mathcal{P}_2$.
+		\item $\left\{
+			\left[\begin{array}{cc}
+				-3 & 4 \\
+				2 & 0
+			\end{array}\right], 
+			\left[\begin{array}{cc}
+				3 & -4 \\
+				-2 & 0
+			\end{array}\right]\right\}$
+		em $M(2, 2)$.
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item (*) Decida se o conjunto $\{1+x+x^2, x+x^2, 1+x^2\}$ \'e uma base de $\mathcal{P}_2$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Combine as matrizes de rota\c{c}\~ao no sentido anti-hor\'ario de $60\degree$ e $-45\degree$ para
+	calcular a matrizes de rota\c{c}\~ao no sentido anti-hor\'ario de $15\degree$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item (*) Determine se a transforma\c{c}\~ao linear associada a matriz
+	$A=\left[\begin{array}{cc}
+			1 & 1 \\
+			-2 & 0 \\
+			-3 & 4
+		\end{array}\right]$
+	dada nas bases can\^onicas \'e injetiva.
+\end{enumerate}
+
+\noindent{}\rule{\textwidth}{0.4pt}
+
+{\bf Avalia\c{c}\~ao P3:}
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre o polin\^omio caracter\'istico das matrizes:
+	\begin{enumerate}
+		\item $\left[\begin{array}{cc}
+					1 & 2 \\
+					0 & -1
+			\end{array}\right]$
+		\item $\left[\begin{array}{cc}
+					-2 & 4 \\
+					-9 & -10
+			\end{array}\right]$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule os autovalores e autovetores das matrizes da quest\~ao acima.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Dada a matriz
+	$A=\left[
+		\begin{array}{cc}
+			0 & 2 \\
+			1 & 0
+		\end{array}
+	\right]$
+	calcule os autovalores de $AA^T$ e $A^TA$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Se o polin\^omio caracter\'istico da matriz $A$ \'e $p(\lambda) = (-1-\lambda)(-2-\lambda)^2(3-\lambda)^2$, responda:
+	\begin{enumerate}
+		\item Quais as dimens\~oes da matriz $A$?
+		\item Quantos autovalores distintos a matriz $A$ possui?
+		\item Quais s\~ao os autovalores de $A$?
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item (*) Dada a matriz
+	$A=\left[\begin{array}{ccc}
+			1 & 2 & 3 \\
+			0 & 2 & -1 \\
+			0 & 0 & 3
+		\end{array}\right]$
+	\begin{enumerate}
+		\item Exiba uma base de $\mathbb{R}^3$ formada por autoveroes de $A$.
+		\item Diagonalize a matriz $A$.
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}

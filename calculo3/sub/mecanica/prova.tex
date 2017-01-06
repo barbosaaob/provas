@@ -1,0 +1,159 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+% \usepackage{graphics}
+% \usepackage[]{float}
+% \usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{18cm} \setlength{\textheight}{25cm}
+\setlength{\topmargin}{-1.5cm}
+% \setlength{\leftmargin}{-5cm} \setlength{\rightmargin}{0cm}
+\setlength{\oddsidemargin}{-1.3cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.45\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf PS --- C\'alculo III}}\\
+
+\midrule{}
+Eng.\ Mec\^anica\hspace{6cm}6 de Outubro de 2016 \\
+\bottomrule{}
+\end{tabular}
+%
+\end{minipage} \hfill
+\begin{minipage}[b]{0.58\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage} \hfill
+
+%------------------------
+\vspace{0.3cm}
+{\bf Aluno(a):}\dotfill{}  % chktex 36
+
+\vspace{0.3cm}
+{\bf Avalia\c{c}\~ao respondida:}\dotfill{}
+%----------------------------
+
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	\textbf{Voc\^e deve responder apenas as quest\~oes referentes a sua menor nota\@!}
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Avalia\c{c}\~ao P1:}
+\begin{enumerate}
+\item Calcule o limite $\ds\lim_{(x,y)\rightarrow(0,0)} f(x,y)$, onde 
+	$$f(x,y) = \left\{
+		\begin{array}{cl}
+			\ds\frac{xy}{x^2+xy+y^2}, & \mbox{se } (x,y) \neq (0,0) \\
+			0, & \mbox{se } (x,y) = (0,0)
+		\end{array}\right.$$
+\vspace{0.5cm}
+
+\item Linearize a fun\c{c}\~ao $f(x,y,z) = \sqrt{x^2+y^2+z^2}$ em $(3, 2, 6)$ e  % chktex 36
+	aproxime o valor de $f(3.02, 1.97, 5.99)$.  % chktex 36
+\vspace{0.5cm}
+
+\item Dada $f(x,y)$, com $x=r\cos(\theta)$ e $y=r\sen(\theta)$, mostre que  % chktex 36
+	\begin{equation*}
+	\ds{\left(\frac{\partial f}{\partial x}\right)}^2 + {\left(\frac{\partial f}{\partial y}\right)}^2 =
+	{\left(\frac{\partial f}{\partial r}\right)}^2 + \frac{1}{r^2}{\left(\frac{\partial f}{\partial \theta}\right)}^2
+	\end{equation*}
+
+[Lembre que: $\sen^2(x) + \cos^2(x) = 1$.]
+\vspace{0.5cm}
+
+\item Encontre, se existirem, os pontos de m\'aximo, m\'{\i}nimo e sela da fun\c{c}\~ao
+	$f(x,y) = x^2 + xy + y^2 + y$.  % chktex 36
+\vspace{0.5cm}
+
+\item Utilizando o m\'etodo dos multiplicadores de Lagrange, encontre as
+	dimens\~oes da caixa retangular com volume m\'aximo cuja \'area total da
+	superf\'{\i}cie \'e $64cm^2$.
+\vspace{0.5cm}
+\end{enumerate}
+
+\textbf{Avalia\c{c}\~ao P2:}
+\begin{enumerate}
+\item Calcule a integral dupla $\ds\int_1^2\int_{\pi/2}^{\pi} x\cos(xy)\ dxdy$.
+\vspace{0.5cm}
+
+\item Calcule a integra tripla $\ds\iiint_B 2y\sen(xy)\ dV$, onde $B$ \'e
+	a regi\~ao delimitada pelos planos $\ds x=\pi$, $\ds y=\frac{\pi}{2}$, $\ds
+	z=\frac{\pi}{3}$ e pelos planos coordenados.
+\vspace{0.5cm}
+
+\item Utilizando coordenadas polares, calcule a integral $\ds \iint_R
+	{(x^2+y^2)}^{3/2}\ dA$, onde $R$ \'e a metade superior do c\'{\i}rculo unit\'ario de
+	centro na origem.
+\vspace{0.5cm}
+
+\item Calcule o trabalho realizado pelo campo $F(x,y) = (ye^{xy}, xe^{xy})$ ao
+	mover uma part\'{\i}cula do ponto $(-1,1)$ at\'e o ponto $(2,0)$ ao longo do
+	segmento de reta que liga esses dois pontos.
+\vspace{0.5cm}
+
+\item
+	\begin{enumerate}
+		\item Enuncie as hip\'oteses do Teorema de Green.
+		\item Dada a integral de linha $\ds\int_C y\ dx - x\ dy$, onde $C$ \'e a
+			curva que percorre o tri\^angulo de v\'ertices $(0,0)$, $(2,0)$, $(0,4)$,
+			$(0,0)$, nessa ordem. \'{E} poss\'{\i}vel aplicar o Teorema de Green
+			para resolver essa integral? Resolva a integral.
+	\end{enumerate}
+\end{enumerate}
+
+\begin{flushright}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

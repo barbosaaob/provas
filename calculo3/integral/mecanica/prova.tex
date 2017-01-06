@@ -1,0 +1,119 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+% \usepackage{graphics}
+% \usepackage[]{float}
+% \usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.45\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+
+
+{{\bf C\'alculo III}}\\
+
+\midrule{}
+\hspace{8cm}29 de Setembro de 2016 \\
+\bottomrule{}
+\end{tabular}
+%
+\end{minipage} \hfill
+\begin{minipage}[b]{0.58\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage} \hfill
+%------------------------
+\vspace{0.3cm}\\
+{\bf Aluno(a):}\dotfill{} \\  % chktex 36
+%----------------------------
+
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  in\'icio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+
+\item Calcule a integral dupla $\ds\int_0^{\ln(2)} \int_0^1 xye^{y^2x}\ dy dx$.
+\vspace{1cm}
+
+\item Calcule a integra tripla $\ds\iiint_B 2y\sen(xy)\ dV$, onde $B$ \'e
+	a regi\~ao delimitada pelos planos $\ds x=\pi$, $\ds y=\frac{\pi}{2}$, $\ds
+	z=\frac{\pi}{3}$ e pelos planos coordenados.
+\vspace{1cm}
+
+\item Utilizando coordenadas polares, calcule o volume do s\'olido delimitado por
+	$z=0$ e $z=1-x^2-y^2$.
+\vspace{1cm}
+
+\item Calcule o trabalho realizado pelo campo $F(x,y) = (ye^{xy}, xe^{xy})$ ao
+	mover uma part\'{\i}cula do ponto $(-1,1)$ at\'e o ponto $(2,0)$ ao longo do
+	segmento de reta que liga esses dois pontos.
+\vspace{1cm}
+
+\item Sejam $\ds F(x,y)=\left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ um
+	campo vetorial definido para $(x,y)\neq(0,0)$, $C$ a circunfer\^encia
+	unit\'aria de centro na origem e $D$ a regi\~ao delimitada pela curva $C$.
+	\begin{enumerate}
+		\item Mostre que $\ds \int_C P\ dx + Q\ dy = 2\pi$.
+		\item Mostre que $\ds \iint_D \left(\frac{\partial Q}{\partial x} -
+				\frac{\partial P}{\partial x}\right)\ dA = 0$.
+		\item Por que os itens acima n\~ao contradizem o Teorema de Green?
+	\end{enumerate}
+
+\end{enumerate}
+
+\begin{flushright}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

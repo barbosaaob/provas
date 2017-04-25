@@ -1,0 +1,139 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+% \usepackage[]{float}
+\usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\hspace{-0.6cm}
+\begin{minipage}[p]{0.14\linewidth}
+	\includegraphics[scale=0.24]{ufgd.png}
+\end{minipage}
+\begin{minipage}[p]{0.7\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf An\'alise Num\'erica --- Avalia\c{c}\~ao P1}}\\
+
+\midrule{}
+Eng.\ Mec\^anica\hspace{5cm}30 de Janeiro de 2017 \\
+\bottomrule{}
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+\begin{minipage}[p]{0.15\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage}
+
+%------------------------
+\vspace{0.5cm}
+{\bf Aluno(a):}\dotfill{}  % chktex 36
+%----------------------------
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+
+	\item Avalie a fun\c{c}\~ao $f(x) = x^3 - 6.1x^2 + 3.2x + 1.5$ em $x = 4.71$ usando
+		aritm\'etica computacional com tr\^es d\'{\i}gitos e arredondamento:
+		\begin{enumerate}
+			\item Diretamente.
+			\item Usando o m\'etodo de Horner.
+			\item Compare os resultados usando erro relativo com o valor exato
+				$f(4.71) = -14.263899$.
+			\item Qual m\'etodo obtem o melhor resultado?
+		\end{enumerate}
+	\vspace{0.5cm}
+
+	\item
+		\begin{enumerate}
+			\item Encontre uma raiz de $x^3 - x - 1 = 0$ no intervalo $[1,2]$
+				com precis\~ao de $10^{-1}$ utilizando o m\'etodo da bisse\c{c}\~ao.
+			\item Qual o n\'umero m\'aximo de itera\c{c}\~oes necess\'ario para obter uma
+				raiz com essa precis\~ao utilizando o m\'etodo da bisse\c{c}\~ao?
+			\item \'{E} poss\'{\i}vel encontrar uma raiz no intervalo $[0,1]$ utilizando
+				o m\'etodo da bisse\c{c}\~ao? Justifique.
+		\end{enumerate}
+	\vspace{0.5cm}
+
+	\item Dados $x^2 - \cos{x} = 0$ e $p_0 = 1$:
+		\begin{enumerate}
+			\item Use o m\'etodo de Newton para encontrar uma raiz da equa\c{c}\~ao
+				acima com precis\~ao de $10^{-3}$ utilizando o $p_0$ dado.
+			\item Podemos usar $p_0 = 0$? Justifique.
+		\end{enumerate}
+	\vspace{0.5cm}
+
+	\item Qual o erro m\'aximo ao aproximar a fun\c{c}\~ao $f(x) = \cos{x}$ em $x=0.45$
+		utilizando o polin\^omio interpolador de Lagrange de grau no m\'aximo $2$ e
+		$x_0=0$, $x_1=0.6$ e $x_2=0.9$?
+	\vspace{0.5cm}
+
+	\item A spline c\'ubica natural $s$ abaixo est\'a definida em $[0,2]$
+		\[s(x) = \left\{\begin{array}{ll}
+					s_0(x) = 1+2x-x^3, & \text{se}\ 0 \le x \le 1 \\
+					s_1(x) = 2+b(x-1)+c{(x-1)}^2+d{(x-1)}^3, & \text{se}\ 1 \le x \le 2
+				\end{array}\right.\]
+		Encontre $b$, $c$ e $d$.
+\end{enumerate}
+
+\begin{flushright}
+	\vspace{1cm}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

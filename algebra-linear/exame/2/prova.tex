@@ -1,0 +1,205 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+% \usepackage[]{float}
+\usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+% \newcommand{\det}{\,\mbox{det}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\hspace{-0.6cm}
+\begin{minipage}[p]{0.14\linewidth}
+	\includegraphics[scale=0.24]{ufgd.png}
+\end{minipage}
+\begin{minipage}[p]{0.7\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf \'algebra Linear e Geometria Anal\'{\i}tica --- Exame}}\\
+
+\midrule{}
+Qu\'{\i}mica\hspace{5cm}13 de Abril de 2017 \\
+\bottomrule{}
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+\begin{minipage}[p]{0.15\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage}
+
+%------------------------
+\vspace{0.5cm}
+{\bf Aluno(a):}\dotfill{}  % chktex 36
+%----------------------------
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item Encontre $a$, $b$, $c$ e $d$ tais que
+				\[\left[\begin{array}{cc}
+						a & b \\
+						c & d
+					\end{array}\right]
+				\left[\begin{array}{cc}
+						2 & 3 \\
+						3 & 4
+					\end{array}\right]
+				=
+				\left[\begin{array}{cc}
+						1 & 0 \\
+						0 & 1
+					\end{array}\right]\]
+			\vspace{0.3cm}
+			\item Seja $A = \left[\begin{array}{cc}
+						2 & x^2 \\
+						2x-1 & 0
+					\end{array}\right]$. Se $A^T = A$, qual o valor de $x$?
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	% \item Sejam $A$ e $B$ matrizes $n\times{}n$. Verifique se as afirma\c{c}\~oes abaixo s\~ao verdadeiras ou faltas.
+	% 	\begin{enumerate}
+	% 		\vspace{0.3cm}
+	% 		\item $\det(AB) = \det(BA)$
+	% 		\vspace{0.3cm}
+	% 		\item $\det(A^T) = \det(A)$
+	% 		\vspace{0.3cm}
+	% 		\item $\det(A^2) = (\det(A))^2$
+	% 	\end{enumerate}
+	\item Determine $k$ para que o sistema admita solu\c{c}\~ao:
+		\[\left\{\begin{array}{rcl}
+				-4x + 3y & = & 2 \\
+				 5x - 4y & = & 0 \\
+				 2x -\ y & = & k
+			\end{array}\right.\]
+
+	\vspace{0.5cm}
+	\item Encontre a equa\c{c}\~ao da reta que passa pelo ponto $(1,2,3)$ e \'e perpendicular ao plano
+		$\left\{\begin{array}{l}
+				x = 1+s-2t \\
+				y = 1-t \\
+				z = 4+2s-2t
+			\end{array}\right.$, $s, t\in{} \mathbb{R}$.
+
+	\vspace{0.5cm}
+	\item Seja
+		\[A = \left[\begin{array}{ccc}
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+				-1 & 0 & 0
+			\end{array}\right]\]
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item Quantos autovalores distintos a matriz $A$ possui?
+			\vspace{0.3cm}
+			\item Calcule os autovetores de $A$.
+			\vspace{0.3cm}
+			\item A matriz $A$ \'e diagonaliz\'avel? Justifique.
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Descreva em palavras o efeito geom\'etrico de multiplicar um vetor $(x,y)$ pela matriz $A$.
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item $A = \left[\begin{array}{cc}
+						2 & 0 \\
+						0 & 2
+					\end{array}\right]$
+			\vspace{0.3cm}
+			\item $A = \left[\begin{array}{cc}
+						1 & 0 \\
+						0 & -1
+					\end{array}\right]$
+			\vspace{0.3cm}
+			\item $A = \left[\begin{array}{cc}
+						2 & 0 \\
+						0 & 2
+					\end{array}\right]\cdot
+					\left[\begin{array}{cc}
+						1 & 0 \\
+						0 & -1
+					\end{array}\right]$
+		\end{enumerate}
+\end{enumerate}
+
+% \vfill{}
+% F\'ormulas \'uteis:
+% \[\begin{array}{llll}
+% 	\vspace{0.3cm}
+% 	\cosec(x) = \displaystyle\frac{1}{\sen(x)}, & \sec(x) = \displaystyle\frac{1}{\cos(x)}, & \cotg(x) = \displaystyle\frac{\cos(x)}{\sen(x)}, & \ds\tg(x) = \frac{\sen(x)}{\cos(x)}\\
+% 	\vspace{0.3cm}
+% 	\sen^2(x) + \cos^2(x) = 1, & \tg^2(x) + 1 = \sec^2(x), & 1 + \cotg^2(x) = \cosec^2(x) & \\
+% 	\vspace{0.3cm}
+% 	\sen^2(x) = \displaystyle\frac{1 - \cos(2x)}{2}, & \cos^2(x) = \displaystyle\frac{1 + \cos(2x)}{2} & & \\
+% 	\multicolumn{2}{l}{\sen(x+y) = \displaystyle\sen(x)\cos(y) + \sen(y)\cos(x),} & \multicolumn{2}{l}{\cos(x+y) = \displaystyle\cos(x)\cos(y) - \sen(x)\sen(y)} \\
+% 	& & & \\
+% 	\multicolumn{2}{l}{\sen(x-y) = \displaystyle\sen(x)\cos(y) - \sen(y)\cos(x),} & \multicolumn{2}{l}{\cos(x-y) = \displaystyle\cos(x)\cos(y) + \sen(x)\sen(y)}
+% \end{array}\]
+
+\begin{flushright}
+	\vspace{1cm}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

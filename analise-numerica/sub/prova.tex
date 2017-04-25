@@ -1,0 +1,153 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+% \usepackage[]{float}
+\usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\hspace{-0.6cm}
+\begin{minipage}[p]{0.14\linewidth}
+	\includegraphics[scale=0.24]{ufgd.png}
+\end{minipage}
+\begin{minipage}[p]{0.7\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf An\'alise Num\'erica --- Avalia\c{c}\~ao PS}}\\
+
+\midrule{}
+Eng.\ Mec\^anica\hspace{5cm}3 de Abril de 2017 \\
+\bottomrule{}
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+\begin{minipage}[p]{0.15\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage}
+
+%------------------------
+\vspace{0.5cm}
+{\bf Aluno(a):}\dotfill{} \textbf{Avalia\c{c}\~ao:} \ldots{}\ldots{}\ldots{} % chktex 36
+%----------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Avalia\c{c}\~ao P1:}
+\begin{enumerate}
+	\item Calcule quatro itera\c{c}\~oes do m\'etodo da bisse\c{c}\~ao para aproximar
+		$\sqrt[3]{25}$ no intervalo $[0, 3]$.
+	\item Calcule quatro itera\c{c}\~oes do m\'etodo de Newton para aproximar
+		$\sqrt[3]{25}$ com $p_0=1.5$.
+	\item A tabela abaixo apresenta a popula\c{c}\~ao dos Estados Unidos entre os
+		anos $1950$ e $2000$.
+		\begin{table}[h]
+			\begin{tabular}{c|c|c|c|c|c|c}  % chktex 44
+				Ano & 1950 & 1960 & 1970 & 1980 & 1990 & 2000 \\
+				\hline{}  % chktex 44
+				Popula\c{c}\~ao (mil) & 151326 & 179323 & 203302 &
+				226542 & 249633 & 281422
+			\end{tabular}
+		\end{table}
+
+		\noindent{}Use o polin\^omio interpolador de Lagrange de grau 2 para aproximar os
+		valores da popula\c{c}\~ao no ano de $1940$.
+	\item Uma spline c\'ubica com fronteira amarrada para uma fun\c{c}\~ao $f$ \'e
+		definida em $[1,3]$ por:
+		\[s(x) = \left\{\begin{array}{l}
+					3(x-1) + 2(x-1)^2 - (x-1)^3,\ \text{ se } 1\le x\le 2 \\
+					a + b(x-2) + c(x-2)^2 + d(x-2)^3, \text{ se } 2\le x\le 3
+				\end{array}\right.\]
+		Dado que $f'(1)=f'(3)$, encontre $a$, $b$, $c$ e $d$.
+	\item Use o m\'etodo de Horner para avaliar a fun\c{c}\~ao $f(x) = x^5 - x^4 +
+		2x^3 - 3x^2 + x - 4$ em $\pi$ utilizando aritm\'etica computacional de 3
+		d\'{\i}tigos e arredondamento.
+\end{enumerate}
+
+\vspace{1cm}
+\textbf{Avalia\c{c}\~ao P2:}
+\begin{enumerate}
+	\item Seja $A = \left[\begin{array}{ccc}
+				1 & -1 & 3 \\
+				3 & -3 & 1 \\
+				1 & 1 & 0
+			\end{array}	\right]$:
+		\begin{enumerate}
+			\item Calcule a decomposi\c{c}\~ao $A = LU$.
+			\item Encontre a solu\c{c}\~ao exata do sistema $Ax=b$, com $b = (8, 0, 3)$.
+		\end{enumerate}
+	\item Seja $A = \left[\begin{array}{ccc}
+				10 &  -1 &    0 \\
+				-1 &  10 &  -2 \\
+				0 &  -2 &  10
+			\end{array}	\right]$. Usando 5 casas decimais, calcule quatro
+		itera\c{c}\~oes dos m\'etodos abaixo para resolver o sistema $Ax = b$ usando
+		$x^{(0)}~=~(0,0,0)$ e $b=(9, 7, 8)$.
+		\begin{enumerate}
+			\item Jacobi.
+			\item Gauss-Seidel.
+			\item Compare os resultados com a solu\c{c}\~ao exata $(1, 1, 1)$. Qual
+				m\'etodo obt\'em melhor resultado?
+		\end{enumerate}
+	\item Resolva o PVI $y' = 1 + t - y$, $y(0) = 1$ e $t\in{}[0, 1]$ usando o
+		m\'etodo de Euler Modificado com $h=0.2$.
+\end{enumerate}
+
+\begin{flushright}
+	\vspace{1cm}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

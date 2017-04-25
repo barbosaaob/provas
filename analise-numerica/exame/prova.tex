@@ -1,0 +1,132 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+% \usepackage[]{float}
+\usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\hspace{-0.6cm}
+\begin{minipage}[p]{0.14\linewidth}
+	\includegraphics[scale=0.24]{ufgd.png}
+\end{minipage}
+\begin{minipage}[p]{0.7\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf An\'alise Num\'erica --- Exame}}\\
+
+\midrule{}
+Eng.\ Mec\^anica\hspace{5cm}13 de Abril de 2017 \\
+\bottomrule{}
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+\begin{minipage}[p]{0.15\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2(a)& \\
+\hline  % chktex 44
+2(b)& \\
+\hline  % chktex 44
+3(a)&  \\
+\hline  % chktex 44
+3(b)&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage}
+
+%------------------------
+\vspace{0.5cm}
+{\bf Aluno(a):}\dotfill{} % chktex 36
+%----------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Dada $\ds f(x) = \frac{\sen{(5x)}}{x}$:
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item \'{E} poss\'{\i}vel garantir um zero de $f(x)$ no intervalo $[1,2]$? E no intervalo $[2,3]$? Justifique.
+			\vspace{0.3cm}
+			\item Calcule tr\^es itera\c{c}\~oes do m\'etodo da bisse\c{c}\~ao para $f(x)$ nos intervalos acima, se poss\'{\i}vel.
+			\vspace{0.3cm}
+			\item O m\'etodo de Newton com $p_0=1$ converge para o valor $p
+				\approx 1.256637$. Verifique que $p$ \'e a aproxima\c{c}\~ao de um zero
+				de $f(x)$ no intervalo $[1,2]$. Por que isso n\~ao invalida sua
+				resposta no item (a)?
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Dado o problema de valor inicial $y'=y$, $y(0)=2$, $x\in[0,1]$.
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item Resolva o problema acima usando o m\'etodo do ponto m\'edio e $h=0.2$.
+			\vspace{0.3cm}
+			\item Use interpola\c{c}\~ao de Lagrange de grau 2 para calcular $y(0.1)$.
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Seja
+		\[A = \left[\begin{array}{ccc}
+					10 & -1 & 0 \\
+					-1 & 10 & -2 \\
+					0 & -2 & 10
+				\end{array}\right]\]
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item Use o m\'etodo de Gauss-Seidel para resolver o sistema $Ax = b$, com $b=(-1, 10, -2)$, $x^{(0)}= (0, 0, 0)$ e precis\~ao de $10^{-3}$.
+			\vspace{0.3cm}
+			\item Compare o resultado do item (a) com a solu\c{c}\~ao exata do sistema.
+		\end{enumerate}
+\end{enumerate}
+
+\begin{flushright}
+	\vspace{1cm}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

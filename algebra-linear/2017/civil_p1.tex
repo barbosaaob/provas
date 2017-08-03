@@ -1,0 +1,150 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+% \usepackage[]{float}
+\usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage[]{amsmath}
+% \usepackage[]{epsfig}
+% \usepackage[brazil]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+\usepackage{subcaption}
+\usepackage{systeme}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\text{sen}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\tr}{\,\mbox{tr}\,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\hspace{-0.6cm}
+\begin{minipage}[p]{0.14\linewidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[p]{0.7\linewidth}
+\begin{tabular}{c}
+\toprule{}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Avalia\c{c}\~ao P1}}\\
+
+\midrule{}
+Eng. Civil\hspace{5cm}05 de Julho de 2017 \\
+\bottomrule{}
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+\begin{minipage}[p]{0.15\linewidth}
+\begin{flushright}
+\def\arraystretch{1.2}
+\begin{tabular}{|c|c|}  % chktex 44
+\hline\hline  % chktex 44
+1 & \hspace{1.2cm} \\
+\hline  % chktex 44
+2& \\
+\hline  % chktex 44
+3& \\
+\hline  % chktex 44
+4&  \\
+\hline  % chktex 44
+5&  \\
+\hline  % chktex 44
+{\small Total}&  \\
+\hline\hline  % chktex 44
+\end{tabular}
+\end{flushright}
+\end{minipage}
+
+%------------------------
+\vspace{0.5cm}
+{\bf Aluno(a):}\dotfill{}  % chktex 36
+%----------------------------
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Mostre que se o sistema
+		\[\systeme{
+				x+y+2z=a,
+				2x+y+3z=b,
+				x+z=c}\]
+	tem solu\c{c}\~ao, ent\~ao as constantes $a$, $b$ e $c$ devem satisfazer $c = b-a$.
+
+	\vspace{0.5cm}
+	\item Determine $a$, $b$, $c$ e $d$ tais que
+		\[\begin{bmatrix}
+			a-b & b+c \\
+			3d+c & 2a-4d
+		\end{bmatrix}
+		=
+		\begin{bmatrix}
+			8 & 1 \\
+			7 & 6
+		\end{bmatrix}\]
+	
+	\vspace{0.5cm}
+	\item Encontre os valores de $\lambda$ para os quais $\det(A)=0$, com
+		$A=\begin{bmatrix}
+			\lambda-2 & 1 \\
+			-5 & \lambda+4
+		\end{bmatrix}$.
+
+	\vspace{0.5cm}
+	\item Determine o valor de $n$ para que o \^angulo entre as retas seja
+		$\frac{\pi}{6}$:
+
+	$r_1:\begin{array}{l}
+		\ds\frac{x-6}{4} = \frac{y-5}{5} = \frac{z-3}{3}
+	\end{array}$
+	\ \ \ \ \ e\ \ \ \ \ 
+	$r_2:\left\{\begin{array}{l}
+		y = nx + 5 \\
+		\frac{z}{2} = x - 1
+	\end{array}\right.$
+
+	\vspace{0.5cm}
+	\item Dados os planos $\pi_1: y=3-x$ e
+		$\pi_2: \left\{\begin{array}{l}
+			x = 2+2t-2s \\
+			y = 1-t-s \\
+			z = 2-2t+2s
+		\end{array}\right.$
+	\begin{enumerate}
+		\item Escreva a equa\c{c}\~ao impl\'{\i}cita de $\pi_2$.
+		\item Calcule a interse\c{c}\~ao entre $\pi_1$ e $\pi_2$.
+	\end{enumerate}
+
+\end{enumerate}
+
+\begin{flushright}
+	\vspace{1cm}
+	\textit{Boa Prova!}
+\end{flushright}
+
+\end{document}

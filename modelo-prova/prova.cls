@@ -79,8 +79,8 @@
 	\begin{tabular}{c}
 	\toprule{}
 	{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
-	{{\bf \@professor}}\\
 	{{\bf \@disciplina\ --- Avalia\c{c}\~{a}o \@avaliacao}}\\
+	{{\bf \@professor}}\\
 	\midrule{}
 	\@curso\hfill{}\@data \\
 	\bottomrule{}

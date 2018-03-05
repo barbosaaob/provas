@@ -73,7 +73,7 @@
 	\thispagestyle{empty}
 	\hspace{-0.6cm}
 	\begin{minipage}{0.14\linewidth}
-		\includegraphics[width=0.9\linewidth]{../ufgd.png}
+		\includegraphics[width=0.9\linewidth]{../../ufgd.png}
 	\end{minipage}
 	\begin{minipage}{0.7\linewidth}
 	\begin{tabular}{c}

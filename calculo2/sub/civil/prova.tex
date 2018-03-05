@@ -1,0 +1,77 @@
+\documentclass{prova}
+
+\renewcommand{\sin}{\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral II}
+\avaliacao{PS}
+\curso{Eng. Civil}
+\data{27/02/2018}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+	\textbf{Todas as respostas devem ser justificadas.}
+    \vspace{1cm}
+
+    \textbf{Avalia\c{c}\~ao P1:}
+	\begin{questionario}
+        \q{Encontre o valor da integral definida $\ds\int_0^1\sqrt[3]{1+7x}\ dx$.}
+        \q{Resolva a integral indefinida $\ds\int e^x\ \sin(x)\ dx$.}
+        \q{Calcule a \'area da regi\~ao delimitada pelo gr\'afico da fun\c{c}\~ao
+            $y=\mbox{tg}(x)$, as retas $x=0$ e $x=\ds\frac{\pi}{4}$ e pelo
+            eixo $x$.}
+        \q{Encontre uma primitiva para a fun\c{c}\~ao $f(x)=\ds\frac{x^2+8x-3}{x^3+3x^2}$.}
+        \q{Calcule a integral impr\'opria $\ds\int_0^1 \frac{1}{\sqrt{x}}\ dx$.}
+	\end{questionario}
+    \vspace{1cm}
+
+    \textbf{Avalia\c{c}\~ao P2:}
+	\begin{questionario}
+        \q{Determine se as fun\c{c}\~oes abaixo s\~ao solu\c{c}\~ao da equa\c{c}\~ao diferencial
+            $y''+y=\cos(x)$:}
+            \begin{questionario}
+                \qq{$y=\ds\frac{1}{2}x\,\sin(x)$}
+                \qq{$y=\ds\frac{1}{4}\cos(x)$}
+            \end{questionario}
+        \q{Classifique em separ\'avel e/ou linear e resolva a equa\c{c}\~ao diferencial
+            $y'=xe^{-\sin(x)}-y\cos(x)$.}
+        \q{Classifique em separ\'avel e/ou linear e resolva a equa\c{c}\~ao diferencial
+            $2ye^{y^2}y'=2x+3\sqrt{x}$.}
+        \q{Resolva a equa\c{c}\~ao diferencial
+            $\ds\frac{d^2y}{dx^2}+4\frac{dy}{dx}+20y=0$.}
+        % \q{Quando um cabo flex\'{\i}vel de densidade uniforme \'e suspenso entre dois
+        %     pontos fixos e fica pendurado \`a merc\^e de seu pr\'oprio peso, a forma
+        %     $y=f(x)$ do cabo satisfaz uma equa\c{c}\~ao diferencial do tipo}
+        %     \[\ds\frac{d^2y}{dx^2}=k\sqrt{1+{\left(\frac{dy}{dx}\right)}^2}\]
+        %     onde $k$ \'e uma constante positiva. Use a mudan\c{c}a de vari\'aveis
+        %     $z=\frac{dy}{dx}$ para resolver a equa\c{c}\~ao diferencial e encontrar a
+        %     fun\c{c}\~ao $y=f(x)$ que determine a forma do cabo.
+        \q{Use a mudan\c{c}a de vari\'aveis $z=\frac{dy}{dx}$ e resolva a equa\c{c}\~ao
+            diferencial n\~ao-linear de segunda ordem}
+            \[\ds\frac{d^2y}{dx^2}=k\sqrt{1+{\frac{dy}{dx}}},\]
+            onde $k$ \'e uma constante.
+	\end{questionario}
+    \vspace{1cm}
+
+    \textbf{Avalia\c{c}\~ao P3:}
+	\begin{questionario}
+        \q{Determine se as sequ\^encias abaixo s\~ao convergentes ou divergentes:}
+            \begin{questionario}
+                \qq{$x_n=\ds\frac{n^{2018}+1}{1+n^{2017}}$}
+                \qq{$x_n=\ds\frac{n\,\cos(n)}{n^2+1}$}
+            \end{questionario}
+        \q{Identifique e determine se as s\'eries abaixo s\~ao convergentes ou
+            divergentes e, quando poss\'{\i}vel, calcule sua soma:}
+            \begin{questionario}
+                \qq{$3+1,26+0,5292+0,222264+\cdots$}
+                \qq{$\ds\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}+\cdots$}
+            \end{questionario}
+        \q{Determine se a s\'erie $\ds\sum_{n=1}^\infty\
+            \frac{n^{2n}}{{(1+2n^2)}^n}$ \'e convergente ou divergente.}
+        \q{Calcule os valores de $x$ para os quais a s\'erie
+            $\ds\sum_{n=1}^\infty\ \frac{2^n{(x-2)}^n}{(n-2)!}$ \'e convergente.}
+        \q{Encontre a s\'erie de Maclaurin para $f(x)=\ln(4-x)$.}
+	\end{questionario}
+\end{document}

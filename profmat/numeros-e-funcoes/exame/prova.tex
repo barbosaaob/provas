@@ -1,0 +1,99 @@
+\documentclass{prova}
+
+\usepackage{amssymb}
+\usepackage{gensymb}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\arctg}{\,\mbox{arctg}\,}
+
+\setlength{\topmargin}{-3cm}
+\setlength{\textheight}{28cm}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{N\'umeros e Fun\c{c}\~oes Reais}
+\avaliacao{Final}
+\curso{PROFMAT}
+\data{20/07/2018}
+
+\begin{document}
+	\cabecalho{6}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+	\textbf{Para as quest\~oes de 1 a 6 escolha e resolva apenas o exerc\'{\i}cio A ou B de cada uma delas.}
+
+	\begin{questionario}
+        \item[1A.] Prove que $f:\mathbb{R}\rightarrow(-1,1)$,
+            $f(x)=\ds\frac{x}{\sqrt{1+x^2}}$ \'e uma bije\c{c}\~ao.
+        \item[1B.] Sejam $X$ e $Y$ conjuntos arbitr\'arios e $f:X\rightarrow Y$
+            uma fun\c{c}\~ao. Prove que, se $A$, $B\subset X$ ent\~ao
+            \begin{enumerate}
+                \item $f(A\cup B) = f(A) \cup f(B)$
+                \item $f(A\cap B) \subset f(A) \cap f(B)$
+            \end{enumerate}
+        \item[2A.] Prove que se $a,b,c$ e $d$ s\~ao n\'umeros racionais tais que
+            $a\sqrt{2}+b\sqrt{3}=c\sqrt{2}+d\sqrt{3}$ ent\~ao $a=c$ e $b=d$.
+        \item[2B.] Seja $f:\mathbb{R}\rightarrow\mathbb{R}$ uma fun\c{c}\~ao
+            crescente tal que, para todo $x$ racional, vale $f(x)=ax+b$ (com
+            $a,b\in\mathbb{R}$ constantes). Prove que se tem $f(x)=ax+b$ tamb\'em se $x$ for
+            irracional.
+        \item[3A.] A imagem de uma fun\c{c}\~ao $f:\mathbb{R}\rightarrow\mathbb{R}$ \'e
+            o conjunto $f(\mathbb{R})$ cujos elementos s\~ao os n\'umeros $f(x)$, onde $x$ \'e
+            qualquer n\'umero real. Determine as imagens das fun\c{c}\~oes
+            $f:\mathbb{R}\rightarrow\mathbb{R}$, $f(x)=rx+s$ e
+            $g:\mathbb{R}\rightarrow\mathbb{R}$, $g(x)=ax^2+bx+c$. Discuta as
+            possibilidades e justifique suas afirma\c{c}\~oes.
+        \item[3B.] Considere as seguintes possibilidades a respeito das fun\c{c}\~oes
+            afins $f,g:\mathbb{R}\rightarrow\mathbb{R}$, em que $f(x)=ax+b$ e $g(x)=cx+d$.
+            \begin{enumerate}
+                \item[A)] $f(x) = g(x)$ para todo $x\in\mathbb{R}$.
+                \item[B)] $f(x)\neq g(x)$ seja qual for $x\in\mathbb{R}$.
+                \item[C)] Existe um \'unico $x\in\mathbb{R}$ tal que $f(x)=g(x)$.
+            \end{enumerate}
+            Com essas informa\c{c}\~oes,
+            \begin{enumerate}
+                \item Exprima cada uma das possibilidades acima por meio de
+                    rela\c{c}\~oes entre os coeficientes $a,b,c$ e $d$.
+                \item Interprete geometricamente cada uma dessas $3$
+                    possibilidades usando os gr\'aficos de $f$ e $g$.
+            \end{enumerate}
+        \item[4A.] A popula\c{c}\~ao de uma cultura de bact\'erias, num ambiente
+            controlado, \'e estimada pela \'area que ocupa sobre uma superf\'{\i}cie plana e tem
+            taxa de crescimento di\'aria proporcional a seu tamanho. Se, decorridos $20$
+            dias, a popula\c{c}\~ao duplicou, ent\~ao ela ficou $50\%$ maior
+            \begin{enumerate}
+                \item antes de $10$ dias.
+                \item ao completar $10$ dias.
+                \item ap\'os $10$ dias.
+            \end{enumerate}
+            Escolha a resposta certa e justifique sua op\c{c}\~ao.
+        \item[4B.] Calcule as seguintes express\~oes:
+            \begin{enumerate}
+                \item $\ds\log_n\left[\log_n\left(\sqrt[n]{\sqrt[n]{\sqrt[n]{n}}}\right)\right]$
+                \item $\ds x^{\log a/\log x}$, onde $a>0$, $x>0$ e a base dos
+                    logaritmos \'e fixada arbitratiamente.
+            \end{enumerate}
+        \item[5A.] Resolva a equa\c{c}\~ao
+            \[\arctg\left(\frac{1+x}{2}\right) + \arctg\left(\frac{1-x}{2}\right) = \frac{\pi}{4}.\]
+        \item[5B.]
+            \begin{enumerate}
+                \item Encontre uma express\~ao para $\sen(3x)$ como um polin\^omio
+                    de coeficientes inteiros em termos de $\sen(x)$.
+                \item Mostre que $\sen(10\degree)$ \'e raiz de um polin\^omio com
+                    coeficientes inteiros.
+            \end{enumerate}
+        \item[6A.] Um professor prop\^os a seguinte quest\~ao: ``Dada a sequ\^encia
+            $1,4,9,16,\ldots$, determine o quinto termo''. Um aluno achou um resultado
+            diferente de $25$, que era a resposta esperada pelo professor. Ele obteve um
+            polin\^omio $P(x)$ satisfazendo cinco condi\c{c}\~oes: $P(1)=1$, $P(2)=4$, $P(3)=9$,
+            $P(4)=16$ e $P(5)\neq 25$. Encontre um polin\^omio $P(x)$ satisfazendo as
+            condi\c{c}\~oes acima e tal que $P(5)=36$.
+        \item[6B.]
+            \begin{enumerate}
+                \item Seja $p(X) = a_nX^n + a_{n-1}X^{n-1} + \cdots + a_2X^2 +
+                    a_1X + a_0$ um polin\^omio com coeficientes inteiros. Se a fra\c{c}\~ao irredut\'{\i}vel
+                    $\ds\frac{a}{b}$, com $a$, $b$ inteiros e $b\neq0$, \'e raiz de $p(X)$, mostre que $a$ \'e
+                    divisor de $a_0$ e $b$ \'e dividor de $a_n$.
+                \item Encontre todas as ra\'{\i}zes reais do polin\^omio $p(X) = 2X^4 + X^3 - 7X^2 - 3X + 3$.
+            \end{enumerate}
+	\end{questionario}
+\end{document}

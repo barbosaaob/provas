@@ -1,0 +1,63 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{PS}
+\curso{Engenharia de Alimentos}
+\data{26/06/2019}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \textbf{Resolva apenas a avalia\c{c}\~ao referente a sua menor nota.}
+    \vspace{0.4cm}
+
+    {\bf Avalia\c{c}\~ao P1:}
+    \begin{questionario}
+	    \q{Calcule as derivadas parciais de $\ds f(x,y)=\frac{\sqrt{y-x^2}}{1-x^2}$.}
+	    \q{Dada $z=e^r \cos{\theta}$, onde $r=st$ e $\theta=\sqrt{s^2+t^2}$,
+	    calcule $\ds\frac{\partial z}{\partial s}$ e
+	    $\ds\frac{\partial z}{\partial t}$.}
+	    \q{Dados $f(x,y,z)=x^2yz-xyz^3$, $P=(1,2,1)$ e
+	    $u=\left(\frac{4}{5},0,-\frac{3}{5}\right)$}
+	    	\begin{questionario}
+		    \qq{Calcule o gradiente de $f$.}
+    		    \qq{Calcule a taxa de variação de $f$ em $P$ na direção de $u$.}
+		\end{questionario}
+	    \q{Encontre os pontos de máximo local, mínimo local e de sela de
+	    $f(x,y)=x^4+y^4-4xy+1$.}
+	    \q{Determine a menor distância entre o ponto $(2,0,-3)$ e o plano
+	    $x+y+z=1$.}
+    \end{questionario}
+
+    \vspace{0.4cm}
+
+    {\bf Avalia\c{c}\~ao P2:}
+	\begin{questionario}
+	    \q{Calcule a integral dupla $\iint_R x\sin{(x+y)}\ dA$, onde
+            $R=[0,\frac{\pi}{6}]\times[0,\frac{\pi}{3}]$}.
+	    \q{Descreva o s\'olido cujo volume \'e dado pela integral
+	    $\ds\int_0^1 \int_0^{\pi} \int_0^1 r\ dr\ d\theta\ dz$ e
+	    determine o valor dessa integral.}
+            \q{Calcule a integral $\ds\iiint_B e^{(x^2+y^2+z^2)^{3/2}}\ dV$,
+            onde $B=\{(x,y,z)\ |\ x^2+y^2+z^2\le 1\}$.}
+		\q{Dada $F(x,y)=(1-ye^{-x}, e^{-x})$}
+                \begin{questionario}
+                    \qq{Determine se $F$ \'e conservativo. Caso positivo, determine a
+                    fun\c{c}\~ao potencial de $F$.}
+                    \qq{Calcule a integral $\int_C F\cdot\ dr$, onde $C$ \'e o
+		    caminho $r(t)=(t\sqrt{t}, \sqrt{2t^2+2t})$, $0\le t\le 1$.}
+		\end{questionario}
+	    \q{Calcule a integral de linha $\int_C \ln{(1+y)}\ dx -
+		\frac{xy}{1+y}\ dy$, onde $C$ é o círculo $x^2+y^2=\frac{1}{4}$.}
+	\end{questionario}
+\end{document}

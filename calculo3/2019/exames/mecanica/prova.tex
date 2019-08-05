@@ -1,0 +1,66 @@
+\documentclass{prova}
+
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+
+\newcommand{\sen}{\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\setlength{\textheight}{25cm}
+\setlength{\topmargin}{-2cm}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{Final}
+\curso{Engenharia Mec\^anica}
+\data{02/07/2019}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+	\textbf{Todas as respostas devem ser justificadas.}
+    %\vspace{0.2cm}
+
+	\begin{questionario}
+        \q{Dada $f(x,y) = e^y(y^2-x^2)$:}
+            \begin{questionario}
+                \qq{(0,5 pts) Calcule o gradiente de $f$.}
+                \qq{(0,5 pts) Determine a taxa de varia\c{c}\~ao m\'axima de $f$ em
+                $(1,0)$.}
+                \qq{(1,0 pts) Encontre os pontos de m\'aximo local, m\'{\i}nimo local
+                e de sela de $f$.}
+            \end{questionario}
+        \q{(2,0 pts) Determine os valores m\'aximo e m\'{\i}nimo da fun\c{c}\~ao
+        $f(x,y)=4x^2-4xy+y^2$ restrita ao c\'{\i}rculo $x^2+y^2=5$.}
+        \q{(2,0 pts) Calcule a integral dupla $\ds\iint_D \frac{y}{1+x^2}\ dA$,
+        onde $D$ \'e a regi\~ao delimitada pelas curvas $y=\sqrt{x}$, $y=0$ e
+        $x=1$.}
+        \q{Sejam $F(x,y)=(e^{xy}+xye^{xy}, e^y+x^2e^{xy})$ e $I=\int_C F\cdot\
+        dr$, onde $C$ \'e o c\'{\i}rculo $x^2+y^2=4$}
+            \begin{questionario}
+                \qq{(0,5 pts) Parametrize a curva $C$.}
+                \qq{(0,5 pts) O campo $F$ \'e conservativo?}
+                \qq{(0,5 pts) \'E poss\'{\i}vel usar o Teorema de Green para calcular
+                a integral $I$?}
+                \qq{(0,5 pts) Calcule a integral $I$.}
+            \end{questionario}
+        \q{(2,0 pts) O Jacobiano de uma mudan\c{c}a de coordenadas $x=g(u,v)$ e
+        $y=h(u,v)$, onde $g$ e $h$ t\^em derivadas parciais cont\'{\i}nuas, \'e dado por
+        \[J=\left|\begin{array}{cc}
+            \ds\frac{\partial x}{\partial u} & \ds\frac{\partial x}{\partial v} \\
+            & \\
+            \ds\frac{\partial y}{\partial u} & \ds\frac{\partial y}{\partial v}
+        \end{array}\right|
+        =\ds\frac{\partial x}{\partial u}\frac{\partial y}{\partial
+        v}-\frac{\partial x}{\partial v}\frac{\partial y}{\partial u}.\]
+        Podemos usar uma mudan\c{c}a de coordenadas para calcular uma integral
+        dupla da seguinte forma:
+        \[\iint_R f(x,y)\ dA = \iint_S f(g(u,v), h(u,v))\ |J|\ du\ dv,\]
+        onde a regi\~ao $S$ do plano $uv$ \'e mapeada pela mudan\c{c}a de coordenadas
+        na regi\~ao $R$ do plano $xy$.
+
+        Use a mudan\c{c}a de coordenadas $x=\frac{1}{2}(u+v)$, $y=\frac{1}{2}(u-v)$
+        para calcular a integral $\iint_R e^{(x+y)/(x-y)}\ dA$, onde $R$ \'e
+        trap\'ezio com v\'ertices $(1,0)$, $(2,0)$, $(0,-2)$ e $(0,-1)$.} 
+	\end{questionario}
+\end{document}

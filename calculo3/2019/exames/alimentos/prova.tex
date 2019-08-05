@@ -1,0 +1,67 @@
+\documentclass{prova}
+
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+
+\newcommand{\sen}{\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\setlength{\textheight}{25cm}
+\setlength{\topmargin}{-2cm}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{Final}
+\curso{Engenharia de Alimentos}
+\data{03/07/2019}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+	\textbf{Todas as respostas devem ser justificadas.}
+    %\vspace{0.2cm}
+
+	\begin{questionario}
+        \q{Dada $f(x,y) = x^3-6xy+8y^3$:}
+            \begin{questionario}
+                \qq{(0,5 pts) Calcule o gradiente de $f$.}
+                \qq{(0,5 pts) Determine a taxa de varia\c{c}\~ao m\'axima de $f$ em
+                $(1,0)$.}
+                \qq{(1,0 pts) Encontre os pontos de m\'aximo local, m\'{\i}nimo local
+                e de sela de $f$.}
+            \end{questionario}
+        \q{(2,0 pts) Determine os valores m\'aximo e m\'{\i}nimo de
+        $f(x,y)=x^2y$ restrita ao c\'{\i}rculo $x^2+y^2=1$.}
+        \q{(2,0 pts) Calcule a integral dupla $\ds\iint_D y\ dA$, onde $D$ \'e a
+        regi\~ao do primeiro quadrante limitada pelas par\'abolas $x=y^2$ e
+        $x=8-y^2$.}
+        \q{Sejam $F(x,y)=(4x^3y^2-2xy^3, 2x^4y-3x^2y^2+4y^3)$ e $I=\int_C
+        F\cdot\ dr$, onde $C$ \'e o arco de par\'abola $y=4x^2$ de $(0,0)$ a
+        $(1,4)$.}
+            \begin{questionario}
+                \qq{(0,5 pts) Parametrize a curva $C$.}
+                \qq{(0,5 pts) O campo $F$ \'e conservativo?}
+                \qq{(0,5 pts) \'E poss\'{\i}vel usar o Teorema de Green para calcular
+                a integral $I$?}
+                \qq{(0,5 pts) Calcule a integral $I$.}
+            \end{questionario}
+        \q{(2,0 pts) O Jacobiano de uma mudan\c{c}a de coordenadas $x=g(u,v)$ e
+        $y=h(u,v)$, onde $g$ e $h$ t\^em derivadas parciais cont\'{\i}nuas, \'e dado por
+        \[J=\left|\begin{array}{cc}
+            \ds\frac{\partial x}{\partial u} & \ds\frac{\partial x}{\partial v} \\
+            & \\
+            \ds\frac{\partial y}{\partial u} & \ds\frac{\partial y}{\partial v}
+        \end{array}\right|
+        =\ds\frac{\partial x}{\partial u}\frac{\partial y}{\partial
+        v}-\frac{\partial x}{\partial v}\frac{\partial y}{\partial u}.\]
+        Podemos usar uma mudan\c{c}a de coordenadas para calcular uma integral
+        dupla da seguinte forma:
+        \[\iint_R f(x,y)\ dA = \iint_S f(g(u,v), h(u,v))\ |J|\ du\ dv,\]
+        onde a regi\~ao $S$ do plano $uv$ \'e mapeada pela mudan\c{c}a de coordenadas
+        na regi\~ao $R$ do plano $xy$.
+
+        Use a mudan\c{c}a de coordenadas $x=2u+v$, $y=u+2v$
+        para calcular a integral $\iint_R x-3y\ dA$, onde $R$ o
+        tri\^angulo com v\'ertices $(0,0)$, $(2,1)$ e $(1,2)$.} 
+	\end{questionario}
+\end{document}

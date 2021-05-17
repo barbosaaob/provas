@@ -1,0 +1,64 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral}
+\avaliacao{P1}
+\curso{Engenharia de Produção}
+\data{13/04/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Esboce o gráfico de uma função que atenda as condições abaixo:}
+            \begin{questionario}
+                \qq{}
+                    \begin{itemize}
+                        \item[] O domínio de $f$ é $[-2, 1]$;
+                        \item[] $f(-2) = f(0) = f(1) = 0$;
+                        \item[] $\ds\lim_{x\rightarrow -2^+} f(x) = 2$,
+                                $\ds\lim_{x\rightarrow 0} f(x) = 0$ e
+                                $\ds\lim_{x\rightarrow 1^-} f(x) = 1$.
+                    \end{itemize}
+                \qq{}
+                    \begin{itemize}
+                        \item[] $f(-1) = 0$, $f(0) = 1$, $f(1) = 0$;
+                        \item[] $\ds\lim_{x\rightarrow -1^-} f(x) = 0$ e
+                                $\ds\lim_{x\rightarrow -1^+} f(x) = +\infty$;
+                        \item[] $\ds\lim_{x\rightarrow 1^-} f(x) = 1$ e
+                                $\ds\lim_{x\rightarrow 1^+} f(x) = -\infty$;
+                    \end{itemize}
+            \end{questionario}
+        \q{Determine o valor de $k$ de modo que $f$ seja contínua para todo
+           $x\in\mathbb{R}$}
+            \[f(x) = \left\{
+                \begin{array}{ll}
+                    7x-2, & x \le 1 \\
+                    kx^2, & x > 1
+                \end{array}
+            \right.\]
+        \q{Sem transformar ou manipular a função $f$:}
+            \begin{questionario}
+                \qq{$\ds f(x) = x^{-3} + \frac{1}{x^7}$, calcule $f'(x)$.}
+                \qq{$f(x) = x^2(x^4-2)$, calcule $f''(x)$.}
+            \end{questionario}
+        \q{Encontre a equação da reta tangente a $y=x \cos{x}$ em $x=\pi$.}
+        \q{Seja $s(t) = 4,5\, t^2$ a equação que descreve a posição (m) de uma
+           partícula em função do tempo (s) no intervalo $0\le t\le 10$:}
+            \begin{questionario}
+                \qq{Calcule a velocidade média da partícula no intervalo $[0,
+                    10]$.}
+                \qq{Determine a velocidade instantânea da partícula em $t=4$.}
+            \end{questionario}
+    \end{questionario}
+\end{document}

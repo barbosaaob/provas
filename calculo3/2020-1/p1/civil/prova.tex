@@ -1,0 +1,47 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{P1}
+\curso{Engenharia Civil}
+\data{09/04/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Determine se as afirmações abaixo são verdadeiras ou falsas e
+           justifique sua resposta.}
+            \begin{questionario}
+                \qq{(1 ponto) A função $f(x,y) = \ln{(x-y+1)}$ pode ser calculada para
+                    qualquer $(x,y)\in\mathbb{R}^2$.}
+                \qq{(1 ponto) A função $f(x,y) = \ds\frac{x^2y^2}{\sqrt{16-x^2-y^2}}$ é
+                    contínua no conjunto\\ $D=\{(x,y)\in\mathbb{R}^2\ |\ x^2+y^2\neq16\}$.}
+                \qq{(1 ponto) $\ds\lim_{(x,y)\rightarrow(0,0)} y\ln{(1+x)} = 0$.}
+            \end{questionario}
+        \q{(1 ponto) Calcule as derivadas parciais da função $f(x,y,z) = z \ln{(x^2 y \cos z)}$.}
+        \q{(2 pontos) Encontre a equação do plano tangente ao elipsóide
+           $2x^2+3y^2+z^2=9$ em $(1,1,2)$.}
+        \q{(2 pontos) Seja $w=f(u)$, onde $u=3x+2y+z$. Mostre que}
+           \[\frac{\partial w}{\partial x} + \frac{\partial w}{\partial y} +
+             \frac{\partial w}{\partial z} = 6\frac{dw}{du}\]
+        \q{A temperatura em uma placa de metal no ponto $(x,y)$ é dada por}
+           \[T(x,y) = \frac{xy}{1+x^2+y^2}.\]
+            \begin{questionario}
+                \qq{(1 ponto) Calcule a taxa de variação da temperatura no ponto $(-1,-1)$
+                    na direção $(1,2)$.}
+                \qq{(1 ponto) A partir do ponto $(-1,-1)$, calcule a direção a qual a
+                    temperatura \textit{\textbf{cai}} mais rapidamente.}
+            \end{questionario}
+    \end{questionario}
+\end{document}

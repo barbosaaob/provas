@@ -1,0 +1,66 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{PS}
+\curso{Engenharia Civil}
+\data{28/05/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \textbf{Resolva apenas a avalia\c{c}\~ao referente a sua menor nota.}
+    \vspace{0.5cm}
+
+    {\bf Avalia\c{c}\~ao P1:}
+    \begin{questionario}
+        \q{Determine se as afirmações são verdadeiras ou falsas e justifique
+            sua resposta.}
+            \begin{questionario}
+                \qq{$\ds\lim_{(x,y)\rightarrow (a,b)} f(x,y) = f(a,b)$, para
+                    todo $(a,b)\in\mathbb{R}^2$.}
+                \qq{Se $\ds\frac{\partial f}{\partial x}(a,b) = \frac{\partial
+                    f}{\partial y}(a,b) = 0$, então $(a,b)$ é um ponto de
+                    máximo ou de mínimo.}
+            \end{questionario}
+        \q{A função $f(x,y) = \ln{(e^x + e^y)}$ é solução da equação diferencial
+            $\ds\frac{\partial^2 f}{\partial x^2} \frac{\partial^2 f}{\partial y^2}
+                - 2\left(\frac{\partial^2 f}{\partial y \partial x}\right)^2 = 0$?}
+        \q{A altitude $z$ de uma montanha é dada por $z=2000-0,02x^2-0,04y^2$,
+            onde $x$ e $y$ estão no plano $xy$ a nível do mar com o eixo $x$
+            apontando para leste e o eixo $y$ para norte. Se um alpinista está no
+            ponto $(-10, 5, 1997)$ e escala para oeste, ele irá subir ou descer a
+            montanha?}
+        \q{A energia consumida num resistor é dada por $\ds P = \frac{C^2}{R}$.
+            Calcule a aproximação linear para a energia consumida quando $C$ decresce
+            $0,002$V, $R$ aumenta $0,01\ohm$, $C=100$V e $R=10\ohm$.}
+    \end{questionario}
+
+    \vspace{1cm}
+
+    {\bf Avalia\c{c}\~ao P2:}
+	\begin{questionario}
+        \q{Encontre os máximos locais, mínimos locais e pontos de sela de
+            $f(x,y) = e^{x/2}(y^2+x)$.}
+        \q{Calcule a integral invertendo a ordem de integração}
+            \[\int_0^{\sqrt{\pi}} \int_y^{\sqrt{\pi}} \cos{(x^2)}\ dxdy\]
+        \q{Calcule a integral utilizando coordenadas esféricas}
+            \[\int_{-2}^2 \int_0^{\sqrt{4-y^2}}
+              \int_{-\sqrt{4-x^2-y^2}}^{\sqrt{4-x^2-y^2}}\ \ y\sqrt{x^2+y^2+z^2}\ dz dx dy\]
+        \q{Sejam $F(x,y) = (xy^2, -x^2y)$ e $C$ uma curva que consiste no arco
+            de parábola $y=x^2$ de $(-1,1)$ a $(1,1)$ e do segmento de reta
+            ligando $(1,1)$ a $(-1,1)$. Calcule o trabalho realizado pelo campo
+            $F$ ao mover uma partícula ao longo do caminho $C$.}
+	\end{questionario}
+\end{document}

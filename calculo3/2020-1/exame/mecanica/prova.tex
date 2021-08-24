@@ -1,0 +1,35 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{Final}
+\curso{Engenharia Mecânica}
+\data{08/06/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Mostre que existe um ponto em comum a todos os planos tangente da
+            superfície $z=y\ds f\left(\frac{x}{y}\right)$, onde $f$ é uma função diferenciável de uma
+            variável.}
+        \q{Sejam $\nabla f(a,b) = (1,-2)$ e $\ds\frac{\partial f}{\partial
+            u}(a,b) = -2$, encontre $u$.}
+        \q{Sendo $f$ contínua, mostre que}
+            \[\int_0^a \int_0^y \int_0^z f(x)\ dx\ dz\ dy = \frac{1}{2}\int_0^a
+                f(x) (x-a)^2\ dx\]
+        \q{Determine a curva $C$ simples, fechada, suave e orientada
+            positivamente tal que\\ $\ds\int_C \left(-3y^3\right)\ dx +
+            \left[4x\left(-\frac{x^2}{3}+1\right)\right]\ dy$ tenha valor máximo.}
+    \end{questionario}
+\end{document}

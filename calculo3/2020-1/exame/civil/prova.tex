@@ -1,0 +1,50 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral III}
+\avaliacao{Final}
+\curso{Engenharia Civil}
+\data{10/06/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        %\q{Um cartão retangular de dimensões $A$ e $L$ é cortado em quatro
+        %    partes como na figura abaixo. Determine onde devem ser feitos os
+        %    cortes para que a soma dos quadrados das áreas dos retângulos
+        %    menores seja mínima. Qual o valor da soma dos quadrados das áreas?}
+        %    \begin{figure}[!h]
+        %        \centering
+        %        \includegraphics[width=0.4\textwidth]{retangulo.pdf}
+        %    \end{figure}
+        %\q{$\ds\frac{xy^2}{e^{x^2+y^2}}$}
+        \q{Dados os pontos $(1,2)$, $(2,5)$, $(4,7)$ e $f(x)=ax+b$:}
+            \begin{questionario}
+                \qq{(1,0 pt) Encontre os valores de $a$ e $b$ tais que
+                    \[(f(1)-2)^2 + (f(2)-5)^2 + (f(4)-7)^2\] seja mínimo.}
+                \qq{(0,5 pt) Desenhe os pontos e a função $f$ no plano.}
+                \qq{(1,0 pt) Interprete o que significa minimizar o valor de}
+                    \[F(a,b) = (f(1)-2)^2 + (f(2)-5)^2 + (f(4)-7)^2\]
+            \end{questionario}
+        \q{(2,5 pt) Sabendo que a derivada direcional de $f$ no ponto $(3,-2,1)$ na
+            direção $(2,-1,-2)$ é $-3$ e que $\|\nabla f(3,-2,1)\|=3$, calcule a
+            direção de maior crescimento de $f$ no ponto $(3,-2,1)$. Quem é
+            $\nabla f(3,-2,1)$?}
+        \q{(2,5 pt)Sendo $f$ contínua, mostre que $\ds\int_0^1 \int_{x^2}^1 \int_0^{1-y} f(t)\ dt\ dy\
+            dx = \frac{2}{3}\int_0^1 (1-t)^{3/2}f(t)\ dt$.}
+        \q{(2,5 pt) Determine a curva $C$ simples, fechada, suave e orientada
+            positivamente tal que\\ $\ds\int_C \left(-2y^3+3y\right)\ dx +
+            \left(\frac{x^3}{3}\right)\ dy$ tenha valor mínimo.}
+    \end{questionario}
+\end{document}

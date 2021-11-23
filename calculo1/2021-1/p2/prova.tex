@@ -1,0 +1,63 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral}
+\avaliacao{P2}
+\curso{Engenharia de Aquicultura}
+\data{22/11/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{}
+            \begin{questionario}
+                \qq{Encontre o erro no c\'alculo abaixo:}
+                    \[\lim_{x\rightarrow 1} \frac{x^3-x^2+x-1}{x^4-x^3} = 
+                    \lim_{x\rightarrow 1} \frac{3x^2-2x+1}{4x^3-3x^2} = 
+                    \lim_{x\rightarrow 1} \frac{6x-2}{12x^2-6x} =
+                    \lim_{x\rightarrow 1} \frac{6}{12x-6} = 1\]
+                \qq{Calcule o limite corretamente.}
+            \end{questionario}
+        \q{Um carro viaja a 60km/h. Um outro carro est\'a viajando num trajeto
+        perpendicular ao primeiro e eles se encontrar\~ao num cruzamento. No
+        instante em que o primeiro carro est\'a a 2km do ponto de encontro o
+        segundo carro est\'a a 4km do cruzamento e viajando a 120km/h. Nesse
+        momento, qu\~ao r\'apido a dist\^ancia entre eles diminui?}
+        %\q{Esboce o gr\'afico de uma fun\c{c}\~ao cont\'{\i}nua tal que $f(0)=2$, $f'(0)=0$,
+        %$f''(x)<0$ para $x<0$ e $f''(x)>0$ para $x>0$.}
+        \q{Esboce o gr\'afico de uma fun\c{c}\~ao cont\'{\i}nua que atenda a todos os itens
+        abaixo:}
+            \begin{questionario}
+                \qq{$f(-2) = f(0) = f(2) = 0$}
+                \qq{$f(-1) = f(1) = -1$}
+                \qq{$f'(-1) = f'(0) = f'(1) = 0$}
+                \qq{$f'(x) > 0$ nos intervalos $(-1,0)$ e $(1,+\infty)$}
+                \qq{$f'(x) < 0$ nos intervalos $(-\infty,-2)$ e $(0,1)$}
+                \qq{$f''(x) > 0$ nos intervalos
+                $\left(-\infty,-\frac{1}{2}\right)$ e
+                $\left(\frac{1}{2},+\infty\right)$}
+                \qq{$f''(x) < 0$ em $\left(-\frac{1}{2},\frac{1}{2}\right)$}
+            \end{questionario}
+        \q{Quais s\~ao as dimens\~oes do ret\^angulo de per\'{\i}metro $P$ com a maior
+        \'area poss\'{\i}vel?}
+        \q{}
+            \begin{questionario}
+                \qq{Calcule a derivada $\ds\frac{d}{dx}\left[\int_0^x
+                \cos{\left(\sqrt{t}\right)}\ dt\right]$.}
+                \qq{Calcule a integral $\ds\int_{-\pi/2}^{\pi/2}
+                \frac{d}{dx}\left[e^{\cos{x}}\right]\ dx$.}
+            \end{questionario}
+    \end{questionario}
+\end{document}

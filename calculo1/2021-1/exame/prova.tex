@@ -1,0 +1,56 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\DeclareMathOperator{\sen}{sen}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral}
+\avaliacao{Final}
+\curso{Engenharia de Aquicultura}
+\data{06/12/2021}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Se $\ds\lim_{x\rightarrow 0} \left[f(x)+g(x)\right]=-1$ e
+            $\ds\lim_{x\rightarrow 0} \left[f(x)-g(x)\right]=1$, encontre
+            $\ds\lim_{x\rightarrow 0} \left[f(x)g(x)\right]$.}
+        \q{}
+            \begin{questionario}
+                \qq{Dado um cubo de lado $x$, estabele\c{c}a uma equa\c{c}\~ao que
+                relacione a \'area da sua superf\'{\i}cie com seu volume.}
+                \qq{O volume de um cubo est\'a crescendo a uma taxa de 1 cm$^3$/min. Qu\~ao r\'apido 
+                a \'area da surperf\'{i}cie do cubo est\'a aumentando quando sua aresta mede 3 cm?}
+            \end{questionario}
+        \q{Um time de futebol joga num est\'adio com capacidade para 16.000 espectadores. Com o 
+            ingresso custando R\$20,00, a m\'edia de p\'ublico nos jogos \'e de 11.000 pessoas. Uma
+            pesquisa de mercado indicou que o p\'ublico aumentaria em 1.000 pessoas em cada jogo para cada
+            R\$1,00 diminuido no valor do ingresso. Qual deve ser o pre\c{c}o do ingresso para que o 
+            faturamento do time com a venda de ingressos seja a maior poss\'ivel?}
+        \q{Dada $f(t) = \ds 1+\frac{1}{2}t^4 - \frac{2}{5} t^9$:}
+            \begin{questionario}
+                \qq{Calcule a derivada de $g(x) = \ds\int_0^{x^2} f(t)\ dt$.}
+                \qq{Encontre uma antiderivada de $f$.}
+                \qq{Calcule $\ds\int_0^1 f(t)\ dt$.}
+            \end{questionario}
+        \q{}
+            \begin{questionario}
+                \qq{\'E poss\'{\i}vel encontrar uma fun\c{c}\~ao tal que $f'(0)=1$,
+                    $f'(1)=0$ e que $f''(x)>0$ para todo $x\in\mathbb{R}$? Exiba a
+                    fun\c{c}\~ao ou prove que n\~ao existe.}
+                \qq{Calcule $\ds\lim_{x\rightarrow3} \left(\frac{x}{x-3}
+                    \int_3^x \frac{\sen{t}}{t}\ dt\right)$.}
+                %\qq{Sejam $f(x) = \ds\int_0^{\sen{x}} 1+\cos{\left(t^2\right)}\ dt$ e $g(x) =
+                %  \ds\int_0^{f(x)} \frac{x^2}{\sqrt{1+t^3}}\ dt$. Calcule $g'(\pi)$.}
+            \end{questionario}
+    \end{questionario}
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral}
+\avaliacao{PS}
+\curso{Engenharia de Computa\c{c}\~ao}
+\data{13/06/2022}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \vspace{0.5cm}
+    \textbf{Avalia\c{c}\~ao P1:}
+    \begin{questionario}
+        \q{Encontre a equa\c{c}\~ao da reta tangente a $f(x)=4\sen^2{x}$ no ponto
+           $\left(\frac{\pi}{6},1\right)$.}
+        \q{Seja $f(x)=\sqrt{4x+1}$. Calcule $f''(x)$.}
+        \q{Se $g(x)=f(x)+x^2[f(x)]^3$ e $f'(1)=f(1)=2$, calcule $g'(1)$.}
+        \q{Se $f(x)=e^{3x}$, encontre a f\'ormula para $f^{(n)}(x)$ (derivada de
+           ordem $n$) em fun\c{c}\~ao de $n$.}
+        \q{Determine os pontos onde a tangente a $f(x)=x\ln{x}-x$ \'e
+           horizontal.}
+    \end{questionario}
+
+    \vspace{0.5cm}
+    \textbf{Avalia\c{c}\~ao P2:}
+    \begin{questionario}
+        \q{Encontre o erro no c\'alculo abaixo e calcule o limite corretamente.}
+            \begin{align*}
+                \lim_{x\rightarrow 1}\frac{x^3-x^2+x-1}{x^3-x^2}
+                =\lim_{x\rightarrow 1}\frac{3x^2-2x+1}{3x^2-2x} 
+                =\lim_{x\rightarrow 1}\frac{6x-2}{6x-2} =1
+            \end{align*}
+        \q{Dado que $x^2+y^2=2x+4y$, onde $x$ e $y$ s\~ao fun\c{c}\~oes de $t$, calcule
+           $\displaystyle\frac{dy}{dt}$ sabendo que
+           $\displaystyle\frac{dx}{dt}=-5$ quando $(x,y)=(3,1)$.}
+        \q{Mostre que entre todos os ret\^angulos de per\'{\i}metro $p$, o quadrado \'e
+           o que tem a maior \'area.}
+        \q{Calcule a \'area da regi\~ao delimitada pelas curvas $y=x+1, y=9-x^2,
+           x=-1$ e $x=2$.}
+        \q{Utilizando integrais, calcule o volume da pir\^amide de altura $H$ e
+           base quadrada de lado $L$.}
+    \end{questionario}
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo 2}
+\avaliacao{Final}
+\curso{Matem\'atica}
+\data{09/11/2022}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Sejam $f$ e $g$ fun\c{c}\~oes cont\'{\i}nuas em $[a,b]$. Determine se as
+           afirma\c{c}\~oes s\~ao verdadeiras ou falsas justificando ou
+           apresentando contra-exemplos.}
+           \begin{questionario}
+               \qq{$\ds\int_a^b f(x)g(x)\ dx = \left(\int_a^b f(x)\ dx\right) \left(\int_a^b
+                   g(x)\ dx\right)$.}
+                \qq{$\ds\int_a^b xf(x)\ dx = x\int_a^b f(x)\ dx$.}
+                \qq{$\ds\int_a^b f'(x)\ dx = f(b)-f(a)$}
+           \end{questionario}
+        \q{Determine o valor de}
+            \begin{questionario}
+                \qq{$\ds\int_0^{\pi/2}
+                \frac{d}{dx}\left[\sen\left(\frac{x}{2}\right)\cos\left(\frac{x}{3}\right)\right]\
+                dx$.}
+                \qq{$\ds\frac{d}{dx}\left(\int_0^{\pi/2}
+                \sen\left(\frac{x}{2}\right)\cos\left(\frac{x}{3}\right)\
+                dx\right)$.}
+            \end{questionario}
+        \q{Encontre uma primitiva para $f(x)=e^x\cos{x}$.}
+        \q{Calcule a \'area delimitada pelas curvas $y=e^{\sqrt{x}}$, $y=0$,
+           $x=0$ e $x=1$.}
+        \q{Determine se a integral impr\'opria $\ds\int_1^{\infty}
+           \frac{\ln{x}}{x}\ dx$ \'e convergente ou divergente.}
+    \end{questionario}
+\end{document}

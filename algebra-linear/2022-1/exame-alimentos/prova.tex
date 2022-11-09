@@ -1,0 +1,82 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[inline]{enumitem}
+
+\setlength{\textheight}{25cm}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{\'Algebra Linear e Geometria Anal\'{\i}tica}
+\avaliacao{Final}
+\curso{Eng. de Alimentos}
+\data{07/11/2022}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Determine o valor de $k$ para que o sistema admita uma \'unica solu\c{c}\~ao
+        e apresente essa solu\c{c}\~ao. }
+            \[\left\{\begin{array}{rcl}
+                -4x+3y & = & 2 \\
+                5x-4y & = & 0 \\
+                2x-y & = & k
+            \end{array}\right.\]
+        \q{Seja $A = \left[\begin{array}{cc}
+					2 & x^2 \\
+					2x-1 & 0
+           \end{array}\right]$. Se $A^T = A$, qual o valor de $x$?}
+        \q{Encontre a equa\c{c}\~ao da reta que passa pelo ponto $A=(1,2,3)$ e \'e perpendicular ao plano}
+
+            \[\pi:\left\{\begin{array}{l}
+		    		x = 1+s-2t \\
+		    		y = 1-t \\
+		    		z = 4+2s-2t
+            \end{array}\right., s, t\in{} \mathbb{R}.\]
+        \q{Descreva em palavras o efeito geom\'etrico de multiplicar um vetor
+           $(x,y)$ pela matriz $A$.}
+	    	\begin{enumerate}
+	    		\vspace{0.3cm}
+	    		\item $A = \left[\begin{array}{cc}
+	    					2 & 0 \\
+	    					0 & 2
+	    				\end{array}\right]$
+	    		\vspace{0.3cm}
+	    		\item $A = \left[\begin{array}{cc}
+	    					1 & 0 \\
+	    					0 & -1
+	    				\end{array}\right]$
+	    		\vspace{0.3cm}
+	    		\item $A = \left[\begin{array}{cc}
+	    					2 & 0 \\
+	    					0 & 2
+	    				\end{array}\right]\cdot
+	    				\left[\begin{array}{cc}
+	    					1 & 0 \\
+	    					0 & -1
+	    				\end{array}\right]$
+	    	\end{enumerate}
+        \q{Seja}
+	    	\[A = \left[\begin{array}{ccc}
+	    			0 & 1 & 0 \\
+	    			0 & 0 & 1 \\
+	    			-1 & 0 & 0
+	    		\end{array}\right]\]
+	    	\begin{enumerate}
+	    		\vspace{0.3cm}
+	    		\item Quantos autovalores reais a matriz $A$ possui?
+	    		\vspace{0.3cm}
+	    		\item Calcule os autovetores de $A$.
+	    		%\vspace{0.3cm}
+	    		%\item A matriz $A$ \'e diagonaliz\'avel? Justifique.
+	    	\end{enumerate}
+    \end{questionario}
+\end{document}

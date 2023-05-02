@@ -1,0 +1,85 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textwidth}{18cm}
+\setlength{\textheight}{27cm}
+\setlength{\topmargin}{-2.3cm}
+\setlength{\oddsidemargin}{-1cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo Diferencial e Integral II}
+\avaliacao{PS}
+\curso{Engenharia Civil}
+\data{25/04/2023}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \vspace{0.5cm}
+    \textbf{Avalia\c{c}\~ao P1:}
+    \begin{questionario}
+        \vspace{-0.5cm}
+        \q{Calcule $\ds\lim_{n\rightarrow\infty} x_n$, onde:}
+            \begin{questionariol}
+                \ql{$x_n = \sqrt{n+1}-\sqrt{n}$}
+                \ql{$x_n = \ds\int_1^n \frac{1}{x}\ dx$}
+            \end{questionariol}
+        \vspace{-0.3cm}
+        \q{Determine se as s\'eries s\~ao convergentes:}
+            \begin{questionariol}
+                \ql{$\ds\sum_{n=1}^\infty \frac{n^3}{n+1}$}
+                \ql{$\ds\sum_{n=1}^\infty n^{-\pi}$}
+            \end{questionariol}
+        \vspace{-0.3cm}
+        \q{Determine se a s\'erie $2+0,5+0,125+0,03125+\cdots$ \'e convergente e,
+           se poss\'{\i}vel, calcule sua soma.}
+        \vspace{-0.3cm}
+        \q{Determine para quais valores de $x$ a s\'erie $\ds\sum_{n=1}^\infty
+           \frac{(-1)^n n^2 x^n}{2^n}$ \'e convergente.}
+        \vspace{-0.3cm}
+        \q{Encontre a s\'erie de Taylor da fun\c{c}\~ao $f(x) = \ds\frac{1}{x}$
+           centrada em $a=-1$.}
+    \end{questionario}
+
+    \textbf{Avalia\c{c}\~ao P2:}
+    \begin{questionario}
+        \vspace{-0.5cm}
+        \q{Calcule a integral definida $\ds\int_1^e x^2 \ln{x}\ dx$.}
+        \vspace{-0.3cm}
+        \q{Calcule a integral $\ds\int
+           \frac{\sin{\left(\sqrt{x}\right)}}{\sqrt{x}}\ dx$.}
+        \vspace{-0.3cm}
+        \q{Calcule a integral $\ds\int \frac{x+2}{x^2-9}\ dx$.}
+        \vspace{-0.3cm}
+        \q{Determine se a integral impr\'opria $\ds\int_2^\infty \frac{1}{x
+           \ln{x}}\ dx$ \'e convergente ou divergente e calcule seu valor, se
+           poss\'{\i}vel.}
+        \vspace{-0.3cm}
+        \q{Determine, se poss\'{\i}vel, o valor da integral $\ds\int_0^1
+           \frac{5}{x^5}\ dx$.}
+    \end{questionario}
+
+    \textbf{Avalia\c{c}\~ao P3:}
+    \begin{questionario}
+        \vspace{-0.5cm}
+        \q{Verifique se $y(x)=\ds\frac{\ln{x}}{x}$ \'e solu\c{c}\~ao da equa\c{c}\~ao
+           diferencial $x^2y' + xy=1$.}
+        \vspace{-0.3cm}
+        \q{Resolva o problema de valor inicial $y'=3x^2e^y$, $y(0)=1$.}
+        \vspace{-0.3cm}
+        \q{Resolva a equa\c{c}\~ao diferencial $y'=xe^{-\cos{x}} + y\sin{x}$.}
+        \vspace{-0.3cm}
+        \q{Resolva a equa\c{c}\~ao diferencial $x^2y''+2xy' = \ln{x}$, $x>0$, usando
+           a mudan\c{c}a de vari\'aveis $u=y'$.}
+        \vspace{-0.3cm}
+        \q{Dada a equa\c{c}\~ao diferencial $y''-6y'+8y=0$. Determine sua solu\c{c}\~ao
+           geral e a solu\c{c}\~ao que satisfaz $y(0)=2$ e $y'(0)=2$.}
+    \end{questionario}
+\end{document}

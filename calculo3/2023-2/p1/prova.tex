@@ -1,0 +1,56 @@
+\documentclass{prova}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\textheight}{25cm}
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\ds}{\displaystyle}
+
+\professor{Prof.\@ Adriano Barbosa}
+\disciplina{C\'alculo de V\'arias Vari\'aveis}
+\avaliacao{P1}
+\curso{Matem\'atica}
+\data{29/11/2023}
+
+\begin{document}
+	\cabecalho{5}  % o numero 5 indica a qnt de quadros na tabela de nota
+
+    \textbf{Todas as respostas devem ser justificadas.}
+
+    \begin{questionario}
+        \q{Determine se as afirma\c{c}\~oes s\~ao verdadeiras ou falsas. Prove as
+           verdadeiras e d\^e um contra-exemplo para as falsas.}
+            \begin{questionario}
+                \qq{Se $f$ \'e uma fun\c{c}\~ao, ent\~ao $\ds\lim_{(x,y)\rightarrow (2,5)}
+                    f(x,y) = f(2,5)$.}
+                 \qq{Se $f(x,y)\rightarrow L$ quando $(x,y)\rightarrow (a,b)$ ao
+                     longo de toda reta que passa por $(a,b)$, ent\~ao
+                     $\ds\lim_{(x,y)\rightarrow (a,b)} f(x,y) = L$.}
+                 \qq{O limite $\ds\lim_{(x,y)\rightarrow (0,0)}
+                     \frac{2xy}{x^2+2y^2}$ n\~ao existe.}
+            \end{questionario}
+        \q{Seja $z=f(x,y)$, onde $x=r\cos\theta$ e $y=r\sin\theta$:}
+            \begin{questionario}
+                \qq{Encontre $\ds\frac{\partial z}{\partial r}$ e
+                    $\ds\frac{\partial z}{\partial \theta}$.}
+                \qq{Mostre que}
+                    \[\left(\frac{\partial z}{\partial x}\right)^2 +
+                    \left(\frac{\partial z}{\partial y}\right)^2 =
+                    \left(\frac{\partial z}{\partial r}\right)^2 +
+                    \frac{1}{r^2} \left(\frac{\partial z}{\partial
+                    \theta}\right)^2.\]
+            \end{questionario}
+        \q{Encontre todos os pontos cuja dire\c{c}\~ao de maior varia\c{c}\~ao da fun\c{c}\~ao
+           $f(x,y) = x^2+y^2-2x-4y$ \'e $(1,1)$.}
+        \q{Dada $f(x,y)=x^3-6xy+8y^3$:}
+            \begin{questionario}
+                \qq{Encontre os pontos cr\'{\i}ticos de $f$.}
+                \qq{Classifique os pontos cr\'{\i}ticos de $f$ em m\'aximo local,
+                    m\'{\i}nimo local ou ponto de sela.}
+            \end{questionario}
+        \q{Encontre os pontos do cone $z^2=x^2+y^2$ que est\~ao mais pr\'oximos do
+           ponto $(-4,-2,0)$.}
+    \end{questionario}
+\end{document}

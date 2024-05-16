@@ -1,0 +1,225 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{concmath}
+% \usepackage{geometry}
+
+\usepackage{lmodern}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[margin=1.5cm, top=1cm]{geometry}
+% \usepackage{multicol}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{polynom}
+
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+
+\newtheorem{teorema}{Teorema}
+
+\theoremstyle{definition}
+\newtheorem{questao}{Problema}
+\newtheorem{bonus}{Problema B\^onus}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\newcommand{\simnot}{\mathord{\sim}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Ra}{\Longrightarrow}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\cl}[1]{\overline{#1}}
+
+\DeclareMathOperator{\senh}{senh}
+
+%\usepackage[margin=0.5in]{geometry} % for PAPER & MARGIN
+\usepackage[many]{tcolorbox}    	% for COLORED BOXES (tikz and xcolor included)
+
+\tcbset{
+	sharp corners,
+	colback = white,
+	before skip = 0.2cm,    % add extra space before the box
+	after skip = 0.5cm      % add extra space after the box
+}                           % setting global options for tcolorbox
+
+
+\newtcolorbox{boxD}{
+	sharpish corners, % better drop shadow
+	boxrule = 0pt,
+	toprule = 2.5pt, % top rule weight
+	enhanced,
+	fuzzy shadow = {0pt}{-2pt}{-0.5pt}{0.5pt}{black!35} % {xshift}{yshift}{offset}{step}{options} 
+}
+
+
+\newcommand*{\CABECALHO}{
+	%	\hrule\vspace{.1cm}\hrule\vspace{.5cm} % Upper rule
+	\begin{center}%[c]{lr}
+		\hspace{-.5cm}
+		\raisebox{-0.25in}{
+			\includegraphics[scale=.25]{nes_logo.png}
+		}
+		\begin{tabular}[c]{l}
+			\textbf{\sc{Fun\c{c}\~oes Elementares e Matrizes}}\\
+			\textbf{\sc{Avalia\c{c}\~ao 01 –– Sexta-Feira, 10 de Maio de 2024}}\\
+			\textbf{Professor:} Adriano Barbosa\\%$\;$\rule{6,9cm}{0.1mm}\\
+			\textbf{Aluno(a):$\;$\rule{7,0cm}{0.1mm}}\\
+			% \textbf{Curso:\rule{8,2cm}{0.1mm}}
+		\end{tabular}
+%	\hspace{.5cm}
+		\begin{tabular}[c]{|c|c|c|c|}\hline
+			 P1 & \hphantom{1234}\vphantom{\Large{AT}} &  P5 & \hphantom{1234}\vphantom{123AB}\\\hline
+			 P2 & \vphantom{\Large{AT}}  &  P6 & \\\hline
+			 P3 & \vphantom{\Large{AT}}  &  P7 & \\\hline
+			 P4 & \vphantom{\Large{AT}}  &  P8 & \\\hline\hline
+			 \multicolumn{3}{|c|}{\sc{nota final}} & \vphantom{123B}\\\hline
+		\end{tabular}
+	\end{center}
+}
+
+
+%\newcommand*{\CABECALHOO}{
+%	%	\hrule\vspace{.1cm}\hrule\vspace{.5cm} % Upper rule
+%	\begin{center}%[c]{lr}
+%		\hspace{-.6in}
+%		\raisebox{-0.25in}{
+%			\includegraphics[scale=.25]{nes_logo.png}
+%		}
+%		\begin{tabular}[c]{l}
+%			\textbf{\sc{M\'odulo 1 -- Probabilidade e Estat\'{\i}stica}}\\
+%			\textbf{\sc{Avalia\c{c}\~ao 01 –– Sexta-Feira, 10 de Maio de 2024}}\\
+%			\textbf{Professor:} \textit{Krerley Oliveira}\\%$\;$\rule{6,9cm}{0.1mm}\\
+%			\textbf{Aluno(a):$\;$\rule{7,0cm}{0.1mm}}\\
+%			% \textbf{Curso:\rule{8,2cm}{0.1mm}}
+%		\end{tabular}
+%		\begin{tabular}[c]{|c|c|}
+%			\hline \sc{parte a} & \hphantom{123}\vphantom{\Large123} \\
+%			\hline \sc{parte b} & \vphantom{\Large123}\\\hline
+%			\sc{total} & \vphantom{\Large123}\\\hline
+%		\end{tabular}
+%	\end{center}
+%}
+
+\pagestyle{empty}
+
+\begin{document}
+	
+	\vspace{-2cm}
+	
+	\CABECALHO
+	
+	%\vspace{.3cm}
+	
+	\begin{boxD}
+        \textbf{\large Instru\c{c}\~oes:} A pontua\c{c}\~ao m\'axima desta prova \'e de $100$
+        pontos, ent\~ao fique a vontade para fazer quantas quest\~oes quiser!  Em
+        todas as quest\~oes, mostre seus c\'alculos e apresente uma resposta
+        completa e clara. Certifique-se de que todas suas respostas estejam
+        leg\'{\i}veis e organizadas.
+	\end{boxD}
+	
+%	\begin{center}
+%		\begin{tabular}[c]{ |c|c|c|c|c|c|c }
+%				\cline{1-6}
+%				\multicolumn{3}{ |c| }{ \sc{parte a}} & \multicolumn{3}{ c| }{\sc{parte b}} & \\\hline
+%				\sc{P1}\vphantom{\huge{ab}} & \sc{P2} & \sc{P3} & \sc{P4} & \sc{P5} & \sc{P6} & \multicolumn{1}{c|}{\sc{total}} \\\hline
+%				\hphantom{123457890}\vphantom{\Huge{abcd}} & \hphantom{123457890} &  \hphantom{123457890} & \hphantom{123457890} & \hphantom{123457890} & \hphantom{123457890} &  \multicolumn{1}{c|}{\hphantom{123457890}}\\\hline
+%			\end{tabular}
+%	\end{center}
+	
+	
+	
+%	\section*{Parte A {\it\large –– Escolha apenas $2$ quest\~oes.}}
+	
+	%\begin{multicols}{2}
+
+    \begin{questao}[10 pontos]
+        Se $A = \{x \in \mathbb{R} \mid |x - 2| < 3\}$ e $B = \{x \in
+        \mathbb{R} \mid |x + 1| < 2\}$, determine $A \cap B$ e $A \cup B$.
+    \end{questao}
+
+    \begin{questao}[10 pontos]
+        Resolva a equa\c{c}\~ao $2^{x^2-3x+2} = 8$.
+    \end{questao}
+
+    \begin{questao}[10 pontos]
+        Considere a fun\c{c}\~ao $f: \mathbb{R}^+ \rightarrow \mathbb{R}$ dada por
+        $f(x) = \ln(x+1)$. Determine uma fun\c{c}\~ao $g: \mathbb{R} \rightarrow
+        \mathbb{R}^+$ tal que $g(f(x)) = x$, $\forall x\in\mathbb{R}^+$, e
+        $f(g(x)) = x$, $\forall x\in\mathbb{R}$.
+    \end{questao}
+	
+    \begin{questao}[20 pontos]
+        Alice decidiu criptografar uma mensagem para Bob usando a fun\c{c}\~ao $f(x)
+        = 3x + 7$. Antes de aplicar essa fun\c{c}\~ao, Alice mapeou cada letra do
+        alfabeto em n\'umeros, onde A \'e 1, B \'e 2, C \'e 3, e assim por diante, at\'e
+        Z ser 26. Para n\'umeros maiores que 26, o alfabeto volta a se repetir,
+        onde A \'e 27, B \'e 28 e assim sucessivamente para todos os n\'umeros
+        naturais.
+        \[
+            \begin{array}{*{23}c}
+                \text{A} & \text{B} & \text{C} & \text{D} & \text{E} & \text{F}
+                & \text{G} & \text{H} & \text{I} & \text{J} & \text{K} &
+                \text{L} & \text{M} & \text{N} & \text{O} & \text{P} & \text{Q}
+                & \text{R} & \text{S} & \text{T} & \text{U} & \text{V} \\
+                1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15
+                & 16 & 17 & 18 & 19 & 20 & 21 & 22 \\
+                \text{W} & \text{X} & \text{Y} & \text{Z} & \text{A} & \text{B}
+                & \text{C} & \cdots & & & & & & & & & & & & & & & \\
+                23 & 24 & 25 & 26 & 27 & 28 & 29 & \cdots & & & & & & & & & & &
+                & & &
+            \end{array}
+        \]
+        \begin{enumerate}[(a)]
+            \item Decifre a mensagem ``52\ \  43\ \  10'' encontrando a inversa
+                de $f$.
+            \item Tomando o dom\'{\i}nio de $f$ como $\{ x\in\mathbb{R} \mid x\ge
+                1\}$, qual deve ser o dom\'{\i}nio de $f^{-1}$ para que as fun\c{c}\~oes
+                estejam bem definidas?
+        \end{enumerate}
+    \end{questao}
+
+    \begin{questao}[30 pontos]
+        Mostre que, para todo $n\in\mathbb{N}$, $1^2 + 3^2 + 5^2 + \cdots +
+        (2n-1)^2 = \ds\frac{n(4n^2-1)}{3}$.
+    \end{questao}
+
+    \begin{questao}[30 pontos]
+        Denotando por $A^\complement$ o complementar do conjunto $A$, ou
+        seja, $A^\complement = \{x \mid x\notin A\}$.  Dados conjuntos $A$ e
+        $B$ quaisquer, mostre que $(A\cup B)^\complement = A^\complement \cap
+        B^\complement$, ou seja, mostre que todo elemento de $(A\cup
+        B)^\complement$ \'e tamb\'em elemento de $A^\complement \cap
+        B^\complement$ e vice-versa.
+    \end{questao}
+
+    \begin{questao}[40 pontos]
+        Um \^onibus de 50 lugares foi fretado para uma excurs\~ao. A ag\^encia de
+        turismo cobrou de cada passageiro R\$400,00 mais R\$10,00 por cada
+        lugar vago.  Para que n\'umero de passageiros o faturamento da ag\^encia \'e
+        m\'aximo?
+    \end{questao}
+
+    \begin{questao}[40 pontos]
+        Se $A = \{x \in \mathbb{R} \mid x^3 - 6x^2 + 11x - 6 = 0\}$ e $B = \{x
+        \in \mathbb{R} \mid x^3 - 5x^2 + 8x - 4 = 0\}$, determine $A-B$.
+    \end{questao}
+	
+	\vfill{\hfill{― \bf Boa Prova !}}
+	
+\end{document}
